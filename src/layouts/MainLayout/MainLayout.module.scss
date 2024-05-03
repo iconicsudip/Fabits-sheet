@@ -1,0 +1,20 @@
+.main_layout {
+    margin-left: var(--sidebar-width);
+    padding: var(--sp-xl);
+    transition: margin-left 0.1s;
+        width: calc(100% - var(--sidebar-width));
+        &.mobile{
+            margin-left: 0;
+            width: 100%;
+            padding: 0;
+            padding-top: 65px;
+        }
+    &.collapsed{
+        margin-left: var(--collapsed-sidebar-width);
+        width: calc(100% - var(--collapsed-sidebar-width));
+    }
+    &.mobile_collapsed{
+        margin-left: 0;
+        width: 100%;
+    }
+}

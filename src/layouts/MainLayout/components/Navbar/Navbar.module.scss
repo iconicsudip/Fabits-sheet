@@ -1,0 +1,35 @@
+.navbar {
+    padding: var(--sp-lg);
+    background-color: #fff;
+    border-bottom: var(--secondary-border);
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+        display: flex;
+        align-items: center;
+        gap: var(--sp-md);
+
+        .logo {
+            height: calc(var(--sp-lg)* 2);
+        }
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .right {
+        display: flex;
+            align-items: center;
+            gap: var(--sp-md);
+            img {
+                    cursor: pointer;
+                }
+    }
+}
