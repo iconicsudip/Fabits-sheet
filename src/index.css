@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+  font-family: "DM Sans", sans-serif, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--bg-color);
+  --sp-xs: 4px;
+  --sp-sm: 8px;
+  --sp-md: 12px;
+  --sp-lg: 16px;
+  --sp-xl: 24px;
+
+  --radi-sm: 4px;
+  --radi-md: 6px;
+  --radi-lg: 8px;
+
+  --text-h1: 28px;
+  --text-h2: 24px;
+  --text-h3: 20px;
+  --text-h4: 18px;
+  --text-h5: 16px;
+  --text-md: 14px;
+  --text-sm: 13px;
+  --text-xs: 12px;
+
+  --bg-color: #F4F7FE;
+  --secondary-bg-color: #E7EDFC;
+  --primary: #41558D;
+  --primary-light: #3a486f;
+  --primary-lighter: #A8B1CB;
+  --secondary-border: 1px solid #D3DBEC;
+  --primary-border: 1px solid var(--primary);
+  --primary-color: #2D2D2D;
+  --secondary-color: #575757;
+  --tertiary-color: #5D5D5D;
+  --quaternary-color: #7D7D7D;
+  --quinary-color: #727272;
+  --heading-color: #6E6E6E;
+  --sidebar-width: 296px;
+  --collapsed-sidebar-width: 104px;
+  --box-shadow: 0px 4px 12px #41558D29;
+  --button-shadow: 0px 4px 4px 0px #41558D0A;
+  --green-dark: #5B8350;
+  --green-light: #74A766;
+  --green-lighter: #C5DEBD;
+  --yellow-dark: #D99E16;
+  --yellow-lighter: #FDF7E8;
+  --yellow-light: #F7DA95;
+  --red-dark: #E85D5D;
+  --red-lighter: #FFB9B9;
+  --card-box-shadow: 0px 4px 12px #242f4e1f;
+  --stripe: linear-gradient(-45deg,
+      rgba(255, 255, 255, .2) 5%, transparent 5%, transparent 10%,
+      rgba(255, 255, 255, .2) 10%, rgba(255, 255, 255, .2) 15%, transparent 15%, transparent 20%,
+      rgba(255, 255, 255, .2) 20%, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 30%,
+      rgba(255, 255, 255, .2) 30%, rgba(255, 255, 255, .2) 35%, transparent 35%, transparent 40%,
+      rgba(255, 255, 255, .2) 40%, rgba(255, 255, 255, .2) 45%, transparent 45%, transparent 50%,
+      rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 55%, transparent 55%, transparent 60%,
+      rgba(255, 255, 255, .2) 60%, rgba(255, 255, 255, .2) 65%, transparent 65%, transparent 70%,
+      rgba(255, 255, 255, .2) 70%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent 80%,
+      rgba(255, 255, 255, .2) 80%, rgba(255, 255, 255, .2) 85%, transparent 85%, transparent 90%,
+      rgba(255, 255, 255, .2) 90%, rgba(255, 255, 255, .2) 95%, transparent 95%, transparent);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  font-size: var(--text-md);
+}
+
+a {
+  display: contents;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+}
