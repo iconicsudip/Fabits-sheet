@@ -1,0 +1,11 @@
+.home_wrapper{
+padding: var(--sp-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-lg);
+    .first_card, .second_card{
+            display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: var(--sp-lg);
+    }
+}

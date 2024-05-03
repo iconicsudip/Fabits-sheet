@@ -1,0 +1,12 @@
+.ipo_card{
+    background-color: #fff;
+    border: var(--secondary-border);
+    border-radius: calc(4* var(--radi-sm));
+    padding: var(--sp-lg);
+    display: flex;
+    box-shadow: var(--box-shadow);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--sp-lg);
+}
