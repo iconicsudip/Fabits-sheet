@@ -1,0 +1,23 @@
+.experience_card{
+        flex: 1;
+            padding: var(--sp-md) var(--sp-xl);
+            border-radius: var(--sp-lg);
+            border: 2px solid transparent;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    &.selected{
+        border: var(--border);
+        background-color: var(--selected-exp-color);
+    }
+    .label{
+        color: #394C03;
+            font-size: var(--sp-lg);
+            font-weight: 600;
+    }
+    .yoe{
+        color:#677C2B;
+            font-size: 14px;
+    }
+}

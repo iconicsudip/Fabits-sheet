@@ -33,6 +33,9 @@
   --bg-color: #F4F7FE;
   --secondary-bg-color: #E7EDFC;
   --primary: #41558D;
+  --sheet-primary: #1D3B7A;
+  --sheet-secondary: #2E529E;
+  --selected-exp-color:#83A72014;
   --primary-light: #3a486f;
   --primary-lighter: #A8B1CB;
   --secondary-border: 1px solid #D3DBEC;
@@ -47,7 +50,12 @@
   --sidebar-width: 296px;
   --collapsed-sidebar-width: 104px;
   --box-shadow: 0px 4px 12px #41558D29;
+  --button-primary: #83A720;
+  --button-secondary: #F5F8CC;
+  --button-border:2px solid #83A7201A;
+  --border: 2px solid #83A720;
   --button-shadow: 0px 4px 4px 0px #41558D0A;
+  --close-button-shadow: 0px 2px 4px 0px #2D2D2D29;
   --green-dark: #5B8350;
   --green-light: #74A766;
   --green-lighter: #C5DEBD;
@@ -95,4 +103,14 @@ h4,
 h5,
 h6 {
   color: var(--primary-color);
+}
+
+@keyframes car {
+  0% {
+    left: -92px;
+  }
+
+  100% {
+    left: 100%;
+  }
 }

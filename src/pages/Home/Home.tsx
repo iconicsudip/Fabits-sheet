@@ -1,6 +1,7 @@
 import GlanceCard from '../../components/GlanceCard'
 import InsuranceCard from '../../components/InsuranceCard'
 import IpoCard from '../../components/IpoCard'
+import OnboardSheet from '../../components/OnboardSheet'
 import PlanGoalCard from '../../components/PlanGoalCard'
 import StartHelpCard from '../../components/StartHelpCard'
 import TalkUsCard from '../../components/TalkUsCard'
@@ -19,6 +20,7 @@ export default function Home() {
                 <IpoCard/>
                 <TalkUsCard />
             </div>
+            <OnboardSheet />
         </div>
     )
 }

@@ -1,0 +1,25 @@
+.primary{
+        background-color: var(--button-primary);
+            color: #fff;
+            border: none;
+            padding: var(--sp-md) var(--sp-lg);
+            font-size: var(--sp-lg);
+            font-weight: 500;
+            border-radius: var(--sp-md);
+            cursor: pointer;
+}
+
+.secondary{
+    background-color: var(--button-secondary);
+        color: var(--button-primary);
+        border: var(--button-border);
+        padding: calc(2px + var(--sp-sm)) var(--sp-lg);
+        font-size: var(--sp-lg);
+        font-weight: 500;
+        border-radius: var(--sp-md);
+        cursor: pointer;
+        
+}
+.block{
+    width: 100%;
+}

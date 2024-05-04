@@ -1,0 +1,134 @@
+.background_mask {
+    background-color: rgba(244, 247, 254, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    &.hide {
+        display: none;
+    }
+}
+
+.sheet {
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    height: 85%;
+    left: 0;
+    right: 0;
+    border-radius: var(--sp-xl) var(--sp-xl) 0 0;
+    background: linear-gradient(180deg, #E6E66A 55.89%, #FFFFDB 70.74%);
+    transition: height 0.3s ease;
+    &.close{
+        height: 0;
+    }
+    .loading_wrapper {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        .loading {
+            width: 100%;
+            height: 344px;
+            object-fit: cover;
+            object-position: bottom;
+            border-radius: var(--sp-xl) var(--sp-xl) 0 0;
+        }
+
+        .car {
+            width: 92px;
+            bottom: 84px;
+            position: absolute;
+        }
+    }
+
+    .close {
+        background: #2D2D2DCC;
+        position: absolute;
+        top: calc(-2* var(--sp-xl));
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: var(--sp-xl);
+        height: var(--sp-xl);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: calc(var(--sp-xl) - 4px);
+        box-shadow: var(--close-button-shadow);
+        &.hide{
+            display: none;
+        }
+    }
+
+    .sheet_details {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: var(--sp-lg);
+        padding-top: calc(1.2* var(--sp-xl));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .header {
+            display: flex;
+            gap: var(--sp-xs);
+            flex-direction: column;
+
+            .title {
+                color: var(--sheet-primary);
+                font-weight: 600;
+            }
+
+            .sub_title {
+                color: var(--sheet-secondary);
+                font-weight: 400;
+            }
+        }
+
+        .step_wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: var(--sp-xl);
+
+            .current_step {
+                display: flex;
+                gap: var(--sp-lg);
+                align-items: flex-start;
+                justify-content: space-between; 
+                .name {
+                    line-height: calc(4px + var(--sp-xl));
+                    font-size: calc(var(--sp-xl) - 4px);
+                    font-weight: 600;
+                }
+
+                .total_pages {
+                    background: var(--primary-color);
+                    color: #fff;
+                    padding: var(--sp-xs) var(--sp-sm);
+                    border-radius: var(--sp-xl);
+                    font-size: var(--sp-md);
+                    line-height: var(--sp-md);
+                    margin: var(--sp-sm) 0;
+                }
+            }
+
+            .button_item{
+                display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+            }
+            .button_wrapper{
+                display: flex;
+                    align-items: center;
+                    gap: var(--sp-lg);
+            }
+        }
+    }
+}
