@@ -21,6 +21,16 @@
     border-radius: var(--sp-xl) var(--sp-xl) 0 0;
     background: linear-gradient(180deg, #E6E66A 55.89%, #FFFFDB 70.74%);
     transition: height 0.3s ease;
+    transition: background-image 2.5s ease-in;
+    background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    &.back_image{
+        background-image: url('/loading3.svg');
+    }
+    &.back_image2{
+        background-image: url('/loading4.svg');
+    }
     &.less_height{
         height: 80%;
     }

@@ -29,6 +29,7 @@ export default function OnboardSheet() {
     const [loadingStep, setLoadingStep] = useState<boolean>(false);
     const {sheetOpen} = useSelector((state: RootState) => state.sheetDetails);
     const [verificationStep, setVerificationStep] = useState<boolean>(false);
+    const [backImage, setBackImage] = useState<string>(styles.back_image);
     const dispatch = useDispatch();
 
     const handleNext = () => {
@@ -62,8 +63,8 @@ export default function OnboardSheet() {
     }
     const moveCar = () => {
         const car = document.querySelector(`.${styles.car}`) as HTMLImageElement;
-        const timer = loadingStep ? 2000 : 3000
-        const animationType = loadingStep ? 'carStart 2s linear infinite' : 'car 3s linear infinite';
+        const timer = loadingStep ? 3000 : 3000
+        const animationType = loadingStep ? 'carStart 3s linear infinite' : 'car 3s linear infinite';
         
         car.style.animation = animationType;
         setTimeout(() => {
@@ -72,9 +73,11 @@ export default function OnboardSheet() {
             }else{
                 car.style.animation = '';
                 car.style.left = '50%'
+                setBackImage(styles.back_image2)
+                car.style.animation = 'jump 1s linear infinite'
                 setTimeout(() => {
                     carBounce();
-                }, timer - 500);
+                }, timer + 2000);
             }
         }, timer);
     };
@@ -90,7 +93,7 @@ export default function OnboardSheet() {
     return (
         <div>
             <div className={`${styles.background_mask} ${!sheetOpen ? styles.hide : ''}`}/>
-            <div className={`${styles.sheet} ${!sheetOpen ? styles.close: ''} ${loadingStep && !verificationStep ? styles.less_height:''}`}>
+            <div className={`${styles.sheet} ${!sheetOpen ? styles.close : ''} ${loadingStep ? backImage : ''} ${loadingStep && !verificationStep ? styles.less_height:''}`}>
                 <div className={`${styles.close} ${!sheetOpen ? styles.hide : ''}`} onClick={handleClose}>
                     <img src={closeIcon} alt="close_icon" />
                 </div>
@@ -102,7 +105,7 @@ export default function OnboardSheet() {
                             {steps[currentStep].type === SheetType.PanDetails && <img className={styles.loading} style={{height:"284px"}} src="/loading2.svg" alt="loading2" />}
                         </>
                     }
-                    {loadingStep && <img className={styles.loading} src="/loading3.svg" alt="loading3" />}
+                    {/* {loadingStep && <img className={styles.loading} src="/loading3.svg" alt="loading3" />} */}
                     
                     {!verificationStep && <img className={styles.car} src="/car.png" alt="car" />}
                 </div>
