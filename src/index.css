@@ -42,6 +42,7 @@
   --primary-border: 1px solid var(--primary);
   --primary-color: #2D2D2D;
   --secondary-color: #575757;
+  --input-border: 1px solid #EAF0BB;
   --tertiary-color: #5D5D5D;
   --quaternary-color: #7D7D7D;
   --quinary-color: #727272;
@@ -111,6 +112,26 @@ h6 {
   }
 
   100% {
-    left: 100%;
+    left: 150%;
+  }
+}
+
+@keyframes carStart {
+  0% {
+    left: -92px;
+  }
+
+  100% {
+    left: 50%;
+  }
+}
+
+@keyframes carBounce {
+  0% {
+    left: 50%;
+  }
+
+  100% {
+    left: 150%;
   }
 }

@@ -1,0 +1,18 @@
+.input{
+    border: var(--input-border);
+        background-color: var(--button-secondary);
+        padding: var(--sp-md) var(--sp-lg);
+        border-radius: var(--sp-md);
+        color: #394C03;
+        font-size: var(--sp-lg);
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            color: #394C03;
+            text-transform: none;
+        }
+        &::-ms-input-placeholder{
+            color: #394C03;
+        }
+}

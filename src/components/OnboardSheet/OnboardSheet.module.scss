@@ -15,12 +15,15 @@
     position: fixed;
     bottom: 0;
     z-index: 5;
-    height: 85%;
+    height: 90%;
     left: 0;
     right: 0;
     border-radius: var(--sp-xl) var(--sp-xl) 0 0;
     background: linear-gradient(180deg, #E6E66A 55.89%, #FFFFDB 70.74%);
     transition: height 0.3s ease;
+    &.less_height{
+        height: 80%;
+    }
     &.close{
         height: 0;
     }
@@ -28,7 +31,7 @@
         position: relative;
         width: 100%;
         overflow: hidden;
-
+    
         .loading {
             width: 100%;
             height: 344px;
@@ -36,11 +39,27 @@
             object-position: bottom;
             border-radius: var(--sp-xl) var(--sp-xl) 0 0;
         }
+        &.state_loading{
+            height: 100%;
+            .loading{
+                position: relative;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: bottom;
+                    border-radius: var(--sp-xl) var(--sp-xl) 0 0;
 
+            }
+                    .car{
+                        bottom: 200px;
+                    }
+        }
         .car {
             width: 92px;
             bottom: 84px;
             position: absolute;
+            left: -92px;
+            transform: translate(-50%, 0);
         }
     }
 
@@ -75,7 +94,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
+        &.verify_sheet{
+            backdrop-filter: blur(24px);
+            border-radius: var(--sp-xl) var(--sp-xl) 0 0;
+            gap: var(--sp-xl);
+            justify-content: initial;
+        }
         .header {
             display: flex;
             gap: var(--sp-xs);

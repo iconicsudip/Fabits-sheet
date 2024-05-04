@@ -1,0 +1,60 @@
+.pan_details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-xl);
+    .choice_pan_type{
+        display: flex;
+        flex-direction: column;
+        gap: var(--sp-md);
+    }
+
+    .title {
+        font-weight: 500;
+        line-height: 20px;
+        color: var(--secondary-color);
+    }
+
+    .type_wrapper {
+        display: flex;
+        gap: var(--sp-lg);
+        flex-wrap: wrap;
+    }
+
+    .pan_details_type {
+        padding: var(--sp-md) var(--sp-xl);
+        border-radius: var(--sp-lg);
+        border: 2px solid transparent;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+
+        &.selected {
+            border: var(--border);
+            background-color: var(--selected-exp-color);
+        }
+
+        .label {
+            color: #394C03;
+            font-size: var(--sp-lg);
+            font-weight: 600;
+        }
+    }
+    .pan_number{
+            display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: var(--sp-lg);
+                    align-items: center;
+                .field_name{
+                    font-size: var(--sp-lg);
+                        color: var(--secondary-color);
+                        font-weight: 500;
+                }
+                .field{
+                    flex: 1;
+                    text-transform: uppercase;
+                }
+    }
+}
