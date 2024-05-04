@@ -2,7 +2,7 @@
 
 This project involves various functionalities and animations for the onboarding sheet of a web application. The onboarding sheet guides users through the initial setup process and provides interactive elements to enhance user experience.
 
-Deployed url - https://fabits.netlify.app
+Deployed url - https://fabits-sheet.netlify.app
 
 ### Technologies Used
 - TypeScript
