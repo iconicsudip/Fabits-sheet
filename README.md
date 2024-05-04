@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+## Fabits Mobile Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project involves various functionalities and animations for the onboarding sheet of a web application. The onboarding sheet guides users through the initial setup process and provides interactive elements to enhance user experience.
 
-Currently, two official plugins are available:
+Deployed url - https://fabits.netlify.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies Used
+- TypeScript
+- React.js
+- SCSS module for styling
+  
+### Getting Started
+1. Clone this repository.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Run the application:
+    ```bash
+    npm run dev
+    ```
+4. Navigate to `localhost:5173` in your browser to access the application.
 
-## Expanding the ESLint configuration
+### Functionality
+- Continuous car animation every 8 seconds.
+- Dynamic pagination indicators for progress tracking.
+- Visual state change for "Trading Experience" button.
+- Close button functionality for exiting onboarding.
+- Smooth navigation with "Next" button.
+- Visual state change for manual/automatic button.
+- PAN card field triggers keyboard without obscuring.
+- "Back" button for easy navigation within onboarding.
+- Transition to loading screen on Sheet 2 "Next" button click.
+- Visually appealing car animation on loading screen.
+- Translucent loading screen after 8 seconds.
+- Three cards with clickable actions on the verification sheet.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Contact details
+- Name - Sudip Das
+- Phone number - 9073383828
+- Email - das366966@gmail.com
+- Linkedin - https://linkedin.com/in/sudipdas80
