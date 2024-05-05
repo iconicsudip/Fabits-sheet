@@ -1,8 +1,9 @@
 .pan_details {
     display: flex;
     flex-direction: column;
-    gap: var(--sp-xl);
-    .choice_pan_type{
+    gap: var(--sp-lg);
+
+    .choice_pan_type {
         display: flex;
         flex-direction: column;
         gap: var(--sp-md);
@@ -41,20 +42,23 @@
             font-weight: 600;
         }
     }
-    .pan_number{
-            display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                gap: var(--sp-lg);
-                    align-items: center;
-                .field_name{
-                    font-size: var(--sp-lg);
-                        color: var(--secondary-color);
-                        font-weight: 500;
-                }
-                .field{
-                    flex: 1;
-                    text-transform: uppercase;
-                }
+
+    .pan_number {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: var(--sp-lg);
+        align-items: center;
+
+        .field_name {
+            font-size: var(--sp-lg);
+            color: var(--secondary-color);
+            font-weight: 500;
+        }
+
+        .field {
+            flex: 1;
+            text-transform: uppercase;
+        }
     }
 }

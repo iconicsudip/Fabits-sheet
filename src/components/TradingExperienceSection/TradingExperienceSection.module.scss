@@ -1,9 +1,11 @@
-.experience_card_wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+.experience_card_wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
     @media screen and (min-width: 768px) {
         display: flex;
     }
+
     @media screen and (min-width:530px) {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
