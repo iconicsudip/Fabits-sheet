@@ -106,7 +106,7 @@ export default function OnboardSheet() {
                         </>
                     }
                     
-                    {!verificationStep && <img className={`${styles.car} ${loadingStep ? styles.loading_car : ''}`} src="/car.png" alt="car" />}
+                    {!verificationStep && <img className={`${styles.car} ${steps[currentStep].type === SheetType.PanDetails && !loadingStep ? styles.step_two: ''} ${loadingStep ? styles.loading_car : ''}`} src="/car.png" alt="car" />}
                 </div>
                 <div className={`${styles.sheet_details} ${verificationStep ? styles.verify_sheet:''}`}>
                     <div className={styles.header}>
